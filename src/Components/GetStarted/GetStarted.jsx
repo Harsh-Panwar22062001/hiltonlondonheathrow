@@ -6,6 +6,9 @@ import './GetStarted.css';
 import img from './image.png'
 import Sidebar from 'react-sidebar';
 import { CSSTransition } from 'react-transition-group';
+import Footer from '../Footer/Footer'
+
+
 
 const pageVariants = {
   initial: { opacity: 0 },
@@ -18,6 +21,7 @@ function GetStarted() {
   const [sidebarOpen, setSidebarOpen] = useState(false);
 
   return (
+    <>
     <motion.div
       className="get-started-page"
       initial="initial"
@@ -127,6 +131,12 @@ function GetStarted() {
         </div>
       </div>
     </motion.div>
+
+
+    <div className="footer-wrapper">
+    <Footer />
+    </div>
+    </>
   );
 }
 

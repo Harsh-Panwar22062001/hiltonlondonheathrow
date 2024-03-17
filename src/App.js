@@ -4,12 +4,17 @@ import GetStartedPage from './Components/GetStarted/GetStarted';
 import LoginPage from './Components/LoginPage/LoginPage'; // Ensure correct import path
 import SignUp from './Components/SignUp.jsx/SignUp';
 
+
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isSignUp ,setIsSignUp] = useState(false);
 
   return (
-    <Router>
+    <>
+
+
+<Router>
       <div className="App">
         <Routes>
           <Route exact path="/" element={<GetStartedPage />} /> 
@@ -19,6 +24,11 @@ function App() {
         </Routes>
       </div>
     </Router>
+  
+
+
+    </>
+  
   );
 }
 

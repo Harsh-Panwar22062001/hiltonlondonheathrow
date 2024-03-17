@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  padding-bottom: 100px;
 }
 
 .header {
@@ -71,14 +72,17 @@
 }
 
 .video-container {
-  position: relative;
+
   width: 100%;
+  height: auto;
+
 }
 
 .video-container video {
   width: 100%;
   height: auto;
   opacity: 0.9;
+margin-top: 27rem;
 }
 
 .content {
@@ -88,6 +92,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   color: white;
+
 }
 
 .content h1 {
@@ -150,4 +155,10 @@
 .sidebar-nav ul li:hover {
   background-color: #f4f4f4;
   border-radius: 5px;
+}
+
+.footer-wrapper {
+  width: 100%;
+
+  bottom: 0;
 }
