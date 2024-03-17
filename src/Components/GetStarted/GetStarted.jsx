@@ -1,9 +1,11 @@
-import React from 'react';
+import React  , {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import video from './v12.mp4';
 import './GetStarted.css';
 import img from './image.png'
+import Sidebar from 'react-sidebar';
+import { CSSTransition } from 'react-transition-group';
 
 const pageVariants = {
   initial: { opacity: 0 },
@@ -12,6 +14,9 @@ const pageVariants = {
 };
 
 function GetStarted() {
+
+  const [sidebarOpen, setSidebarOpen] = useState(false);
+
   return (
     <motion.div
       className="get-started-page"
@@ -46,9 +51,60 @@ function GetStarted() {
             </motion.button>
           </Link>
 
-          {/* navigation toggle  */}
+          <button
+             onClick={() => setSidebarOpen(!sidebarOpen)} // Toggle the sidebarOpen state
+  className="nav-toggle"
+          >
+            {/* Add your navigation toggle icon here */}
+            ☰
+          </button>
         </div>
       </header>
+
+
+
+
+
+
+
+
+       {/* Sidebar */}
+       <Sidebar
+        sidebar={
+
+
+          <CSSTransition
+            in={sidebarOpen}
+            timeout={300}
+            classNames="sidebar-transition"
+            unmountOnExit
+          >
+          <nav className="sidebar-nav">
+            <ul>
+              <li>
+                <Link to="/">Home</Link>
+              </li>
+              <li>
+                <Link to="/terms">Terms and Conditions</Link>
+              </li>
+              <li>
+                <Link to="/contact">Contact Us</Link>
+              </li>
+              <li>
+                <Link to="/privacy">Privacy</Link>
+              </li>
+              <li>
+                <Link to="/settings">Settings</Link>
+              </li>
+            </ul>
+          </nav>
+          </CSSTransition>
+        }
+        open={sidebarOpen}
+        onSetOpen={setSidebarOpen}
+        pullRight={true} // Open the sidebar toggle in the right direction
+        styles={{ sidebar: { background: 'white', width: '250px' , marginTop:'66px'} }}
+      />
 
       {/* Background video */}
       <div className="video-container">
