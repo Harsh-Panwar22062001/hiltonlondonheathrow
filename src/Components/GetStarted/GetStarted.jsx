@@ -27,6 +27,25 @@ function GetStarted() {
         </div>
         <div className="navigation">
          
+        <Link to="/login" className="nav-link">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="login-button"
+            >
+              Login
+            </motion.button>
+          </Link>
+          <Link to="/signup" className="nav-link">
+            <motion.button
+              whileHover={{ scale: 1.1 }}
+              whileTap={{ scale: 0.9 }}
+              className="signup-button"
+            >
+              Sign Up
+            </motion.button>
+          </Link>
+
           {/* navigation toggle  */}
         </div>
       </header>
