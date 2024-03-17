@@ -35,6 +35,24 @@
   text-decoration: none;
 }
 
+
+
+
+.nav-toggle {
+  background-color: transparent;
+  border: none;
+  color: #333;
+  font-size: 24px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out; 
+}
+
+.nav-toggle:hover {
+  color: #007bff; 
+  transform: scale(1.1); 
+}
+
+
 .login-button,
 .signup-button {
   background-color: #4CAF50;
