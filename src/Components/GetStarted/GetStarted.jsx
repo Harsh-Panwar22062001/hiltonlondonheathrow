@@ -1,14 +1,14 @@
-import React  , {useState} from 'react';
+// GetStarted.js
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import video from './v12.mp4';
-import './GetStarted.css';
-import img from './image.png'
+import './GetStarted.css'; // Import your CSS file
+import img from './image.png';
 import Sidebar from 'react-sidebar';
 import { CSSTransition } from 'react-transition-group';
-import Footer from '../Footer/Footer'
-
-
+import Footer from '../Footer/Footer';
+import HeroPopUp from '../HeroSection/HeroPopUp';
 
 const pageVariants = {
   initial: { opacity: 0 },
@@ -17,13 +17,20 @@ const pageVariants = {
 };
 
 function GetStarted() {
-
   const [sidebarOpen, setSidebarOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
+  const handleGetStartedClick = () => {
+    setIsPopupOpen(true);
+  };
+
+  const handleClosePopup = () => {
+    setIsPopupOpen(false);
+  };
 
   return (
-    <>
     <motion.div
-      className="get-started-page"
+      className="get-started-container" // Add appropriate class name
       initial="initial"
       animate="animate"
       exit="exit"
@@ -35,8 +42,7 @@ function GetStarted() {
           <img src={img} alt="Logo" className="logo" />
         </div>
         <div className="navigation">
-         
-        <Link to="/login" className="nav-link">
+          <Link to="/login" className="nav-link">
             <motion.button
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.9 }}
@@ -54,59 +60,38 @@ function GetStarted() {
               Sign Up
             </motion.button>
           </Link>
-
           <button
-             onClick={() => setSidebarOpen(!sidebarOpen)} // Toggle the sidebarOpen state
-  className="nav-toggle"
+            onClick={() => setSidebarOpen(!sidebarOpen)}
+            className="nav-toggle"
           >
-            {/* Add your navigation toggle icon here */}
             ☰
           </button>
         </div>
       </header>
 
-
-
-
-
-
-
-
-       {/* Sidebar */}
-       <Sidebar
+      {/* Sidebar */}
+      <Sidebar
         sidebar={
-
-
           <CSSTransition
             in={sidebarOpen}
             timeout={300}
             classNames="sidebar-transition"
             unmountOnExit
           >
-          <nav className="sidebar-nav">
-            <ul>
-              <li>
-                <Link to="/">Home</Link>
-              </li>
-              <li>
-                <Link to="/terms">Terms and Conditions</Link>
-              </li>
-              <li>
-                <Link to="/contact">Contact Us</Link>
-              </li>
-              <li>
-                <Link to="/privacy">Privacy</Link>
-              </li>
-              <li>
-                <Link to="/settings">Settings</Link>
-              </li>
-            </ul>
-          </nav>
+            <nav className="sidebar-nav">
+              <ul>
+                <li><Link to="/">Home</Link></li>
+                <li><Link to="/terms">Terms and Conditions</Link></li>
+                <li><Link to="/contact">Contact Us</Link></li>
+                <li><Link to="/privacy">Privacy</Link></li>
+                <li><Link to="/settings">Settings</Link></li>
+              </ul>
+            </nav>
           </CSSTransition>
         }
         open={sidebarOpen}
         onSetOpen={setSidebarOpen}
-        pullRight={true} // Open the sidebar toggle in the right direction
+        pullRight={true}
         styles={{ sidebar: { background: 'white', width: '250px' , marginTop:'66px'} }}
       />
 
@@ -118,25 +103,27 @@ function GetStarted() {
         <div className="content">
           <h1>Welcome to Hilton London Heathrow Airport</h1>
           <p>Start your journey with us.</p>
-          {/* Get Started button */}
-          <Link to="/get-started">
-            <motion.button
-              whileHover={{ scale: 1.1 }}
-              whileTap={{ scale: 0.9 }}
-              className="get-started-button"
-            >
-              Get Started
-            </motion.button>
-          </Link>
+          {/* Replace the <Link> component with a <div> element */}
+          <div className="get-started-button-container">
+            <motion.div>
+              <motion.button
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.9 }}
+                className="get-started-button"
+                onClick={handleGetStartedClick}
+              >
+                Get Started
+              </motion.button>
+              {isPopupOpen && <HeroPopUp isOpen={isPopupOpen} onClose={handleClosePopup} />}
+            </motion.div>
+          </div>
         </div>
       </div>
+
+      <div className="footer-wrapper">
+        <Footer />
+      </div>
     </motion.div>
-
-
-    <div className="footer-wrapper">
-    <Footer />
-    </div>
-    </>
   );
 }
 

@@ -1,0 +1,125 @@
+{
+    "explore": [
+      {
+        "id": 1,
+        "title": "Outdoor Pool",
+        "description": "Relax and enjoy our spacious outdoor pool area.",
+        "image": "https://example.com/outdoor-pool.jpg"
+      },
+      {
+        "id": 2,
+        "title": "Spa & Wellness Center",
+        "description": "Indulge in a range of rejuvenating treatments at our luxurious spa.",
+        "image": "https://example.com/spa.jpg"
+      },
+      {
+        "id": 3,
+        "title": "Fitness Center",
+        "description": "Stay active and maintain your fitness routine at our state-of-the-art gym.",
+        "image": "https://example.com/fitness-center.jpg"
+      },
+      {
+        "id": 4,
+        "title": "Fine Dining Restaurant",
+        "description": "Experience exquisite culinary delights prepared by our world-class chefs.",
+        "image": "https://example.com/restaurant.jpg"
+      },
+      {
+        "id": 5,
+        "title": "Business Center",
+        "description": "Conduct meetings and work efficiently in our fully-equipped business center.",
+        "image": "https://example.com/business-center.jpg"
+      },
+      {
+        "id": 6,
+        "title": "Event Spaces",
+        "description": "Host memorable events and celebrations in our versatile event spaces.",
+        "image": "https://example.com/event-spaces.jpg"
+      },
+      {
+        "id": 7,
+        "title": "Kids Club",
+        "description": "Entertain your little ones with fun activities at our supervised kids club.",
+        "image": "https://example.com/kids-club.jpg"
+      },
+      {
+        "id": 8,
+        "title": "Bar & Lounge",
+        "description": "Unwind with refreshing drinks and cocktails at our stylish bar and lounge.",
+        "image": "https://example.com/bar-lounge.jpg"
+      },
+      {
+        "id": 9,
+        "title": "Gift Shop",
+        "description": "Browse through a variety of souvenirs and gifts at our on-site gift shop.",
+        "image": "https://example.com/gift-shop.jpg"
+      },
+      {
+        "id": 10,
+        "title": "Concierge Service",
+        "description": "Get personalized assistance and recommendations from our dedicated concierge team.",
+        "image": "https://example.com/concierge-service.jpg"
+      },
+      {
+        "id": 11,
+        "title": "Shuttle Service",
+        "description": "Explore the city with ease using our convenient shuttle service.",
+        "image": "https://example.com/shuttle-service.jpg"
+      },
+      {
+        "id": 12,
+        "title": "Pet-Friendly Amenities",
+        "description": "Bring your furry friends along and enjoy our pet-friendly facilities.",
+        "image": "https://example.com/pet-friendly-amenities.jpg"
+      },
+      {
+        "id": 13,
+        "title": "24/7 Room Service",
+        "description": "Indulge in delicious meals and snacks delivered straight to your room at any time.",
+        "image": "https://example.com/room-service.jpg"
+      },
+      {
+        "id": 14,
+        "title": "Babysitting Services",
+        "description": "Enjoy peace of mind with our reliable babysitting services.",
+        "image": "https://example.com/babysitting-services.jpg"
+      },
+      {
+        "id": 15,
+        "title": "Laundry & Dry Cleaning",
+        "description": "Keep your clothes fresh and clean with our laundry and dry cleaning services.",
+        "image": "https://example.com/laundry-services.jpg"
+      },
+      {
+        "id": 16,
+        "title": "Valet Parking",
+        "description": "Conveniently park your vehicle with our hassle-free valet parking service.",
+        "image": "https://example.com/valet-parking.jpg"
+      },
+      {
+        "id": 17,
+        "title": "Airport Transfers",
+        "description": "Arrive and depart in style with our reliable airport transfer services.",
+        "image": "https://example.com/airport-transfers.jpg"
+      },
+      {
+        "id": 18,
+        "title": "Complimentary Breakfast",
+        "description": "Start your day right with our delicious complimentary breakfast offerings.",
+        "image": "https://example.com/complimentary-breakfast.jpg"
+      },
+      {
+        "id": 19,
+        "title": "Wedding Services",
+        "description": "Plan your dream wedding with the help of our experienced wedding planning team.",
+        "image": "https://example.com/wedding-services.jpg"
+      },
+      {
+        "id": 20,
+        "title": "Cultural Activities",
+        "description": "Immerse yourself in local culture with our curated cultural activities and tours.",
+        "image": "https://example.com/cultural-activities.jpg"
+      }
+    ]
+  }
+  

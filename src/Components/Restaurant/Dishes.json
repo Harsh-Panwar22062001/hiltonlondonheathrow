@@ -1,0 +1,165 @@
+{
+    "dishes": [
+      {
+        "name": "Spaghetti Carbonara",
+        "description": "Classic Italian pasta dish made with spaghetti, eggs, cheese, pancetta, and black pepper.",
+        "price": 12.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": false,
+        "rating": 4.5
+      },
+      {
+        "name": "Chicken Alfredo",
+        "description": "Creamy Alfredo sauce served over fettuccine pasta with grilled chicken breast.",
+        "price": 14.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": false,
+        "rating": 4.2
+      },
+      {
+        "name": "Margherita Pizza",
+        "description": "Traditional Italian pizza topped with tomato sauce, mozzarella cheese, fresh basil, and olive oil.",
+        "price": 10.99,
+        "image": "margherita_pizza.jpg",
+        "vegetarian": true,
+        "rating": 4.7
+      },
+      {
+        "name": "Beef Burger",
+        "description": "Juicy beef patty topped with lettuce, tomato, onion, cheese, and pickles on a toasted bun.",
+        "price": 9.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": false,
+        "rating": 4.0
+      },
+      {
+        "name": "Caesar Salad",
+        "description": "Crisp romaine lettuce with Caesar dressing, croutons, and Parmesan cheese.",
+        "price": 8.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": true,
+        "rating": 4.6
+      },
+      {
+        "name": "Fish and Chips",
+        "description": "Beer-battered fish fillets served with French fries, tartar sauce, and lemon wedges.",
+        "price": 11.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": false,
+        "rating": 4.3
+      },
+      {
+        "name": "Beef Tacos",
+        "description": "Soft corn tortillas filled with seasoned ground beef, lettuce, cheese, salsa, and sour cream.",
+        "price": 10.99,
+        "image": "beef_tacos.jpg",
+        "vegetarian": false,
+        "rating": 4.4
+      },
+      {
+        "name": "Chicken Tikka Masala",
+        "description": "Tender chicken pieces cooked in a creamy tomato-based sauce with Indian spices, served with rice.",
+        "price": 13.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": false,
+        "rating": 4.8
+      },
+      {
+        "name": "Sushi Platter",
+        "description": "Assorted sushi rolls including California rolls, tuna rolls, and salmon rolls, served with soy sauce and wasabi.",
+        "price": 16.99,
+        "image": "sushi_platter.jpg",
+        "vegetarian": false,
+        "rating": 4.9
+      },
+      {
+        "name": "Vegetable Stir-Fry",
+        "description": "Assorted vegetables stir-fried in a savory sauce, served over steamed rice.",
+        "price": 9.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": true,
+        "rating": 4.5
+      },
+      {
+        "name": "Mushroom Risotto",
+        "description": "Creamy Italian rice dish cooked with mushrooms, onions, garlic, and Parmesan cheese.",
+        "price": 12.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": true,
+        "rating": 4.6
+      },
+      {
+        "name": "BBQ Ribs",
+        "description": "Slow-cooked pork ribs glazed with barbecue sauce, served with coleslaw and cornbread.",
+        "price": 15.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": false,
+        "rating": 4.3
+      },
+      {
+        "name": "Pad Thai",
+        "description": "Thai-style stir-fried rice noodles with tofu, shrimp, bean sprouts, peanuts, and lime wedges.",
+        "price": 11.99,
+        "image": "pad_thai.jpg",
+        "vegetarian": false,
+        "rating": 4.7
+      },
+      {
+        "name": "Caprese Salad",
+        "description": "Fresh tomato, mozzarella cheese, and basil salad drizzled with balsamic glaze and olive oil.",
+        "price": 8.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": true,
+        "rating": 4.4
+      },
+      {
+        "name": "Beef Stroganoff",
+        "description": "Tender beef strips cooked in a creamy mushroom sauce, served over egg noodles.",
+        "price": 14.99,
+        "image": "beef_stroganoff.jpg",
+        "vegetarian": false,
+        "rating": 4.8
+      },
+      {
+        "name": "Lamb Gyros",
+        "description": "Grilled lamb meat wrapped in pita bread with lettuce, tomato, onion, and tzatziki sauce.",
+        "price": 12.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": false,
+        "rating": 4.6
+      },
+      {
+        "name": "Vegetable Lasagna",
+        "description": "Layers of lasagna noodles, marinara sauce, ricotta cheese, and assorted vegetables.",
+        "price": 11.99,
+        "image": "vegetable_lasagna.jpg",
+        "vegetarian": true,
+        "rating": 4.5
+      },
+      {
+        "name": "Shrimp Scampi",
+        "description": "Sautéed shrimp in a garlic butter sauce, served over linguine pasta.",
+        "price": 15.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": false,
+        "rating": 4.7
+      },
+      {
+        "name": "Chicken Korma",
+        "description": "Tender chicken cooked in a creamy, mildly spiced curry sauce, served with naan bread.",
+        "price": 13.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": false,
+        "rating": 4.5
+      },
+      {
+        "name": "Beef Pho",
+        "description": "Vietnamese noodle soup with thinly sliced beef, rice noodles, bean sprouts, basil, and lime wedges.",
+        "price": 10.99,
+        "image": "https://images8.alphacoders.com/405/405724.jpg",
+        "vegetarian": false,
+        "rating": 4.4
+      }
+    ]
+  }
+  

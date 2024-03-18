@@ -1,0 +1,165 @@
+{
+    "heroBanner": [
+      {
+        "id": 1,
+        "title": "Luxury Retreat",
+        "description": "Indulge in ultimate luxury at our exquisite hotel.",
+        "image": "https://example.com/hero1.jpg",
+        "buttonText": "Book Now",
+        "buttonLink": "#"
+      },
+      {
+        "id": 2,
+        "title": "Seaside Paradise",
+        "description": "Escape to the serenity of our seaside resort.",
+        "image": "https://example.com/hero2.jpg",
+        "buttonText": "Discover More",
+        "buttonLink": "#"
+      },
+      {
+        "id": 3,
+        "title": "Urban Oasis",
+        "description": "Experience the heartbeat of the city at our urban oasis.",
+        "image": "https://example.com/hero3.jpg",
+        "buttonText": "Explore",
+        "buttonLink": "#"
+      },
+      {
+        "id": 4,
+        "title": "Mountain Retreat",
+        "description": "Find solace amidst the majestic mountains.",
+        "image": "https://example.com/hero4.jpg",
+        "buttonText": "Book Now",
+        "buttonLink": "#"
+      },
+      {
+        "id": 5,
+        "title": "Rustic Charm",
+        "description": "Embrace the charm of our rustic countryside hotel.",
+        "image": "https://example.com/hero5.jpg",
+        "buttonText": "Learn More",
+        "buttonLink": "#"
+      },
+      {
+        "id": 6,
+        "title": "Tranquil Haven",
+        "description": "Discover a tranquil haven nestled in nature's embrace.",
+        "image": "https://example.com/hero6.jpg",
+        "buttonText": "Explore",
+        "buttonLink": "#"
+      },
+      {
+        "id": 7,
+        "title": "Safari Adventure",
+        "description": "Embark on an exciting safari adventure with us.",
+        "image": "https://example.com/hero7.jpg",
+        "buttonText": "Book Now",
+        "buttonLink": "#"
+      },
+      {
+        "id": 8,
+        "title": "Coastal Escape",
+        "description": "Relax and rejuvenate with stunning coastal views.",
+        "image": "https://example.com/hero8.jpg",
+        "buttonText": "Discover",
+        "buttonLink": "#"
+      },
+      {
+        "id": 9,
+        "title": "Tropical Paradise",
+        "description": "Experience paradise in our tropical resort.",
+        "image": "https://example.com/hero9.jpg",
+        "buttonText": "Book Now",
+        "buttonLink": "#"
+      },
+      {
+        "id": 10,
+        "title": "City Skyline Views",
+        "description": "Enjoy breathtaking city skyline views from our hotel.",
+        "image": "https://example.com/hero10.jpg",
+        "buttonText": "Explore",
+        "buttonLink": "#"
+      },
+      {
+        "id": 11,
+        "title": "Historic Elegance",
+        "description": "Step into a world of historic elegance and luxury.",
+        "image": "https://example.com/hero11.jpg",
+        "buttonText": "Learn More",
+        "buttonLink": "#"
+      },
+      {
+        "id": 12,
+        "title": "Beachfront Bliss",
+        "description": "Experience blissful moments on our pristine beach.",
+        "image": "https://example.com/hero12.jpg",
+        "buttonText": "Book Now",
+        "buttonLink": "#"
+      },
+      {
+        "id": 13,
+        "title": "Ski Resort Adventure",
+        "description": "Embark on thrilling adventures at our ski resort.",
+        "image": "https://example.com/hero13.jpg",
+        "buttonText": "Discover",
+        "buttonLink": "#"
+      },
+      {
+        "id": 14,
+        "title": "Exclusive Getaway",
+        "description": "Escape to our exclusive retreat for a luxurious getaway.",
+        "image": "https://example.com/hero14.jpg",
+        "buttonText": "Book Now",
+        "buttonLink": "#"
+      },
+      {
+        "id": 15,
+        "title": "Countryside Serenity",
+        "description": "Experience serenity amidst picturesque countryside.",
+        "image": "https://example.com/hero15.jpg",
+        "buttonText": "Explore",
+        "buttonLink": "#"
+      },
+      {
+        "id": 16,
+        "title": "Lakeside Tranquility",
+        "description": "Relax and unwind with lakeside tranquility.",
+        "image": "https://example.com/hero16.jpg",
+        "buttonText": "Book Now",
+        "buttonLink": "#"
+      },
+      {
+        "id": 17,
+        "title": "Riverside Retreat",
+        "description": "Discover peace and relaxation at our riverside retreat.",
+        "image": "https://example.com/hero17.jpg",
+        "buttonText": "Learn More",
+        "buttonLink": "#"
+      },
+      {
+        "id": 18,
+        "title": "Eco-Friendly Resort",
+        "description": "Stay in harmony with nature at our eco-friendly resort.",
+        "image": "https://example.com/hero18.jpg",
+        "buttonText": "Book Now",
+        "buttonLink": "#"
+      },
+      {
+        "id": 19,
+        "title": "Golf Resort Paradise",
+        "description": "Enjoy a golfer's paradise at our luxurious golf resort.",
+        "image": "https://example.com/hero19.jpg",
+        "buttonText": "Explore",
+        "buttonLink": "#"
+      },
+      {
+        "id": 20,
+        "title": "Luxury Villa Retreat",
+        "description": "Indulge in luxury and privacy at our exclusive villa retreat.",
+        "image": "https://example.com/hero20.jpg",
+        "buttonText": "Book Now",
+        "buttonLink": "#"
+      }
+    ]
+  }
+  
