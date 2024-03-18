@@ -1,17 +1,24 @@
-/* HeroPopUp.css */
+
 
 .popup-content {
-  background-color: #fff;
+  background: linear-gradient(0deg, rgba(40,44,52,1) 0%, rgba(17,0,32,.5) 100%);
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
   display: flex;
   flex-wrap: wrap;
-  width: 1100px; /* Set the width to your desired value */
+  
+  width: 1100px;
   margin-top: 450px;
   height: 130%;
-  justify-content: space-between; /* Add this to create space between cards and button */
+  justify-content: space-between; 
   align-items: flex-start;
+ 
+}
+
+.popup-content p{
+
+  font-size: 2rem;
 }
 
 #il{
@@ -21,16 +28,19 @@ display: flex;
   align-items: center;
   justify-content: center;
   
+color:#ffffff;
 
-color: blue;
 }
 
 .card {
-  flex: 1 1 calc(40% - 20px); /* Each card takes half of the container width with some margin */
+  flex: 1 1 calc(40% - 20px); 
   margin-right: 20px;
   margin-bottom: 10px;
   width: 200px;
+  background-color: #f0f094;
 }
+
+
 
 
 
@@ -44,7 +54,7 @@ color: blue;
 }
 
 .card-content {
-  text-align: center; /* Center the content */
+  text-align: center;
 }
 
 .card-content h3 {
@@ -104,10 +114,10 @@ color: blue;
   cursor: pointer;
   margin-top: 8px; 
   
-  position: absolute; /* Position the button absolutely */
-  bottom: -1px; /* Adjust the distance from the bottom */
-  left: 50%; /* Move the button to the center horizontally */
-  transform: translateX(-50%);/* Adjust the margin to create space between cards and button */
+  position: absolute;
+  bottom: -1px; 
+  left: 50%; 
+  transform: translateX(-50%);
 }
 
 .close-button:hover {
@@ -116,3 +126,80 @@ color: blue;
 }
 
 
+
+  
+
+
+
+
+
+@media only screen and (max-width: 600px) {
+
+  .popup-content{
+  
+    width: 360px;
+    max-width: 160%;
+    
+    padding: 10px;
+    display: flex;
+    position: relative;
+    align-items: flex-start;
+    justify-self: flex-start;
+    left: 0px;
+    
+    margin-left: -50px;
+
+  }
+
+}
+
+@media (max-width: 768px) {
+  .popup-content {
+    flex-direction: column;
+    align-items: center;
+   
+  }
+
+  .card {
+    max-width: 160px;
+   
+    height: auto;
+    display: flex;
+   
+  }
+
+  #il {
+    top: 0;
+    margin-right: 0;
+    margin-left: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#cccccc;
+  }
+
+
+  .div1{
+
+    display: flex;
+    flex-direction: row;
+  }
+  .div2{
+
+    display: flex;
+    flex-direction: row;
+  }
+
+  .card h3{
+    white-space: nowrap;
+  }
+}
+.close-button{
+  padding: 0.5px 6px;
+  margin-top: 6px;
+}
+
+@media only screen and (max-width: 600px) {
+  .popup-content {
+    padding: 10px; /* Adjust padding */
+  }
+
+}

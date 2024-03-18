@@ -23,7 +23,7 @@
       "type": "Suite",
       "beds": 3,
       "price": 250,
-      "image": "https://example.com/room3.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijvklO9EqDIFF0Db48JB-QV-A9r7JIIi2gQ&usqp=CAU",
       "features": ["WiFi", "AC"],
       "bookButton": "Book Room"
     },
@@ -41,7 +41,7 @@
       "type": "Standard Room",
       "beds": 1,
       "price": 100,
-      "image": "https://example.com/room5.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijvklO9EqDIFF0Db48JB-QV-A9r7JIIi2gQ&usqp=CAU",
       "features": ["WiFi"],
       "bookButton": "Book Room"
     },
@@ -158,7 +158,7 @@
       "type": "Deluxe Room",
       "beds": 2,
       "price": 150,
-      "image": "https://example.com/room18.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijvklO9EqDIFF0Db48JB-QV-A9r7JIIi2gQ&usqp=CAU",
       "features": ["WiFi", "AC"],
       "bookButton": "Book Room"
     },
@@ -167,7 +167,7 @@
       "type": "Suite",
       "beds": 3,
       "price": 250,
-      "image": "https://example.com/room19.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijvklO9EqDIFF0Db48JB-QV-A9r7JIIi2gQ&usqp=CAU",
       "features": ["WiFi", "AC"],
       "bookButton": "Book Room"
     },
@@ -176,7 +176,7 @@
       "type": "Penthouse",
       "beds": 4,
       "price": 500,
-      "image": "https://example.com/room20.jpg",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRijvklO9EqDIFF0Db48JB-QV-A9r7JIIi2gQ&usqp=CAU",
       "features": ["WiFi", "AC"],
       "bookButton": "Book Room"
     }

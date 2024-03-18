@@ -8,6 +8,7 @@ import RestaurantMenu from './Components/Restaurant/Restaurant';
 import ExploreCards from './Components/Explore/ExploreActivity';
 import HeroBanner from './Components/Hero-Banner/HeroBanner';
 
+
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
@@ -23,6 +24,9 @@ function App() {
           <Route exact path="/book-dishes" element={<RestaurantMenu />} />
           <Route exact path="/bookactivity" element={<ExploreCards/>} />
           <Route exact path="/heroactivity" element={<HeroBanner/>} />
+         
+
+         
         </Routes>
       </div>
     </Router>

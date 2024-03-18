@@ -2,23 +2,28 @@ import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
 import roomData from './Book.json';
+import './RoomBooking.css'
+
+// Import RoomBookingPage component
 
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 20px;
-  padding: 20px;
+  gap: 10px;
+  height:100px ;
+  padding: 10px;
 `;
 
 const Card = styled(motion.div)`
-  width: 300px; /* Set a fixed width for the card */
+  width: 300px;
   background-color: #fff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
+  
 
   &:hover {
     transform: scale(1.05);
@@ -27,8 +32,9 @@ const Card = styled(motion.div)`
 
 const Image = styled.img`
   width: 100%;
-  height: 200px;
-  object-fit: cover;
+  
+  object-fit: contain;
+  overflow:hidden;
 `;
 
 const Content = styled.div`
@@ -77,7 +83,7 @@ const BookButton = styled.button`
 const RoomBooking = () => {
   return (
     <Container>
-      {roomData.rooms.map(room => (
+      {roomData.rooms.map((room) => (
         <Card
           key={room.id}
           whileHover={{ scale: 1.05 }}
@@ -97,6 +103,8 @@ const RoomBooking = () => {
             </Features>
             <BookButton>{room.bookButton}</BookButton>
           </Content>
+          {/* Pass the room object to RoomBookingPage */}
+          
         </Card>
       ))}
     </Container>

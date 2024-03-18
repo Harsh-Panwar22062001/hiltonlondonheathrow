@@ -1,17 +1,22 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import refdata from './Hero.json'; // Import JSON data correctly
+import refdata from './Hero.json'; 
 
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  position:relative;
+  
+  height:100px;
 `;
 
 const Card = styled(motion.div)`
   width: 300px;
+ 
+ 
   background-color: #fff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
@@ -48,13 +53,13 @@ const Description = styled.p`
 const HeroBanner = () => {
   return (
     <Container>
-      {refdata.heroBanner.map((item) => ( // Access the "heroBanner" array
+      {refdata.heroBanner.map((item) => ( 
         <Card
           key={item.id}
           whileHover={{ scale: 1.05 }}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.1 }}
         >
           <Image src={item.image} alt={item.title} />
           <Content>

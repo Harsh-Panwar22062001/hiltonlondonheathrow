@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 import video from './v12.mp4';
-import './GetStarted.css'; // Import your CSS file
+import './GetStarted.css'; 
 import img from './image.png';
 import Sidebar from 'react-sidebar';
 import { CSSTransition } from 'react-transition-group';
@@ -30,7 +30,7 @@ function GetStarted() {
 
   return (
     <motion.div
-      className="get-started-container" // Add appropriate class name
+      className="get-started-container" 
       initial="initial"
       animate="animate"
       exit="exit"
@@ -103,7 +103,7 @@ function GetStarted() {
         <div className="content">
           <h1>Welcome to Hilton London Heathrow Airport</h1>
           <p>Start your journey with us.</p>
-          {/* Replace the <Link> component with a <div> element */}
+         
           <div className="get-started-button-container">
             <motion.div>
               <motion.button

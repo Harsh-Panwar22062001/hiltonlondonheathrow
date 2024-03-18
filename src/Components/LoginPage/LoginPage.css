@@ -27,8 +27,15 @@
     .container {
       flex-direction: column;
       padding: 0 10px;
-      width: 100%;
+      width: 50%;
       max-width: 500px;
+    }
+
+
+    .log{
+
+    width: 480px;
+
     }
   }
   

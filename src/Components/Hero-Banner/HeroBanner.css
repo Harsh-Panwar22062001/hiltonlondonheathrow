@@ -1,6 +1,4 @@
-/* styles.css */
 
-/* Container styles */
 .Container {
     display: flex;
     flex-wrap: wrap;
@@ -8,7 +6,7 @@
     gap: 20px;
   }
   
-  /* Card styles */
+
   .Card {
     width: 300px;
     background-color: #fff;
@@ -23,32 +21,31 @@
     transform: scale(1.02);
   }
   
-  /* Image styles */
+
   .Image {
     width: 100%;
     height: 200px;
     object-fit: cover;
   }
   
-  /* Content styles */
+ 
   .Content {
     padding: 15px;
   }
   
-  /* Title styles */
+
   .Title {
     font-size: 1.5rem;
     font-weight: bold;
     margin-bottom: 10px;
   }
-  
-  /* Description styles */
+
   .Description {
     font-size: 1rem;
     margin-bottom: 10px;
   }
   
-  /* Button styles */
+  
   button {
     background-color: #007bff;
     color: #fff;

@@ -1,11 +1,16 @@
 import React, { useState } from 'react';
 import * as Components from './Components'; 
+import './LoginPage.css'
 
 function LoginPage() {
   const [signIn, setSignIn] = useState(true);
 
   return (
-    <Components.Container>
+
+    <div className='log'>
+
+
+<Components.Container>
       <Components.SignUpContainer signIn={signIn}>
         <Components.Form>
           <Components.Title>Create Account</Components.Title>
@@ -29,7 +34,7 @@ function LoginPage() {
       <Components.OverlayContainer signIn={signIn}>
         <Components.Overlay signIn={signIn}>
 
-          <Components.LeftOverlayPanel signIn={signIn}>
+          <Components.LeftOverlayPanel   signIn={signIn}>
             <Components.Title>Welcome Back!</Components.Title>
             <Components.Paragraph>
               To keep connected with us please login with your personal info
@@ -52,6 +57,10 @@ function LoginPage() {
         </Components.Overlay>
       </Components.OverlayContainer>
     </Components.Container>
+
+
+    </div>
+   
   );
 }
 

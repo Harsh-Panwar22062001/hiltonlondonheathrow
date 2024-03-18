@@ -9,6 +9,7 @@ const Container = styled.div`
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
+  height:80px;
   padding: 20px; /* Add padding to the container */
   margin-top: 20px; /* Add margin to separate from the top of the screen */
   box-sizing: border-box;
@@ -72,7 +73,7 @@ const RestaurantMenu = () => {
           whileHover={{ scale: 1.05 }}
           initial={{ opacity: 0, y: 50 }}
           animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.5, delay: index * 0.1 }}
+          transition={{ duration: 0.1, delay: index * 0.1 }}
         >
           <Image src={dish.image} alt={dish.name} />
           <Content>

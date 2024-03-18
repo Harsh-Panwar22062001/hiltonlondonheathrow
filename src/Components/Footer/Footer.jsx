@@ -43,7 +43,7 @@ export default function App() {
               </p>
             </MDBCol>
 
-            {/* Column 2: Products */}
+         
             <MDBCol md="6" lg="3" className='mx-auto mb-4  '>
               <h6 className='text-uppercase fw-bold mb-4 '>Products</h6>
               <div className='colnum'>
@@ -73,7 +73,7 @@ export default function App() {
            
             </MDBCol>
 
-            {/* Column 3: Useful links */}
+           
             <MDBCol md="6" lg="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Useful links</h6>
 
@@ -104,7 +104,7 @@ export default function App() {
              
             </MDBCol>
 
-            {/* Column 4: Contact */}
+            
             <MDBCol md="6" lg="3" className='mx-auto mb-4'>
               <h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
               <div className='colnum-io'>
@@ -131,7 +131,7 @@ export default function App() {
         </MDBContainer>
       </section>
 
-      {/* Footer bottom section */}
+     
       <div className='text-center p-4' style={{ backgroundColor: 'rgba(0, 0, 0, 0.05)' }}>
         © 2021 Copyright:
         <a className='text-reset fw-bold' href='https://www.hilton.com/en/'>
