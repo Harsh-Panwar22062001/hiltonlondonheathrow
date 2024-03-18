@@ -1,83 +1,45 @@
-/* Card container */
-.Container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-  }
-  
-  /* Card */
-  .Card {
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-    transition: transform 0.3s ease-in-out;
-    width: 300px;
-    cursor: pointer;
-  }
-  
-  /* Card image */
-  .Image {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-  }
-  
-  /* Card content */
-  .Content {
-    padding: 20px;
-  }
-  
-  /* Title */
-  .Title {
-    font-size: 1.5rem;
-    font-weight: bold;
-    margin-bottom: 10px;
-  }
-  
-  /* Description */
-  .Description {
-    font-size: 1rem;
-    margin-bottom: 10px;
-  }
-  
-  /* Highlight list */
-  .HighlightList {
-    list-style: none;
-    padding: 0;
-  }
-  
-  /* Highlight item */
-  .HighlightItem {
-    margin-bottom: 5px;
-  }
-  
-  /* Hover effect */
-  .Card:hover {
-    transform: translateY(-5px);
-  }
-  
-  /* Animation */
-  .Card {
-    transition: transform 0.3s ease-in-out;
-  }
-  
-  /* Card dimensions */
-  .Card {
-    width: 300px;
-  }
-  
-  /* Ensure each card fits within the screen */
-  .Container {
-    max-width: 1200px;
-  }
-  
-  /* Responsive layout for smaller screens */
-  @media (max-width: 768px) {
-    .Container {
-      flex-direction: column;
-    }
-  }
-  
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  max-width: 1200px; /* Adjust the maximum width as needed */
+  margin: 0 auto; /* Center the container */
+}
+
+.card {
+  width: calc(33.33% - 20px); /* Adjust the card width as needed */
+  max-width: 300px; /* Ensure a maximum width for the cards */
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  cursor: pointer;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.02);
+  box-shadow: 0px 6px 20px rgba(0, 0, 255, 0.2);
+}
+
+.image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 15px;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description {
+  font-size: 1rem;
+  margin-bottom: 10px;
+}

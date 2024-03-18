@@ -43,7 +43,7 @@
   background-color: transparent;
   border: none;
   color: #333;
-  font-size: 24px;
+  font-size: 20px;
   cursor: pointer;
   transition: all 0.3s ease-in-out; 
 }
@@ -172,3 +172,78 @@ margin-top: 27rem;
 }
 
 /* Add any additional styling as needed */
+
+
+@media only screen and (max-width: 600px) {
+ .header{
+
+  height: 45px;
+ }
+
+
+ .logo {
+  width: 70%; 
+  height: 40px;
+  border-radius: 50%;
+
+
+}
+
+.login-button,
+.signup-button {
+
+  padding: 3px 12px;
+  
+}
+
+.video-container  {
+
+height: 800px;
+margin-top: -335px;
+
+}
+
+
+.video-container video {
+  width: 100vw; /* Stretch video to full width of viewport */
+  height: 600px;
+  opacity: 0.8;
+}
+
+.content {
+  top: 20%; /* Adjusted position for smaller screens */
+  max-width: 80%; /* Limit width for smaller screens */
+}
+
+.content h1 {
+  font-size: 0.8rem; /* Adjusted font size for smaller screens */
+  margin-bottom: 0.5rem;
+  white-space: nowrap;
+  font-weight: bold;
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.content p {
+  font-size: 1rem; /* Adjusted font size for smaller screens */
+  margin: 0.5rem 0;
+  text-shadow: 
+  -1px -1px 0 #000,  
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
+
+.get-started-button {
+  padding: 8px 16px; /* Adjusted padding for smaller screens */
+  font-size: 1rem;
+  margin-top: 50px;
+   /* Adjusted font size for smaller screens */
+}
+
+
+
+  }

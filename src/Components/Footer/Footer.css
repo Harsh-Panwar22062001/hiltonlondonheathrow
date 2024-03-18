@@ -1,0 +1,41 @@
+/* App.css */
+/* Add media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .footer-column {
+      width: 100%; /* Set width to 100% for smaller screens */
+      margin-bottom: 20px; /* Add margin bottom for spacing */
+    }
+
+
+    .socion{
+display: flex;
+flex-direction: row;
+top: -50;
+margin-top: 7rem;
+gap: 10;
+    }
+
+.colnum{
+    
+         /* Adjust as needed */
+      display: flex;
+      font-size: 14px;
+      justify-content: space-around;
+    
+}
+
+.colnum-io{
+
+    display: flex;
+    font-size: 9px;
+    white-space: nowrap;
+    justify-content: space-around;
+
+}
+
+
+  }
+  
+  /* Add any additional styling as needed */
+  
+

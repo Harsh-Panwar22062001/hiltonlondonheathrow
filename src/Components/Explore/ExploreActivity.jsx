@@ -1,8 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import exploreData from './Data.json'
-import './ExploreActivity.css'
+import data from './Data.json';
 
 const Container = styled.div`
   display: flex;
@@ -46,10 +45,10 @@ const Description = styled.p`
   margin-bottom: 10px;
 `;
 
-const ExploreCards = ({ exploreData }) => {
+const ExploreCards = () => {
   return (
     <Container>
-      {exploreData.map((item) => (
+      {data.explore.map((item) => (
         <Card
           key={item.id}
           whileHover={{ scale: 1.05 }}
