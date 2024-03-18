@@ -2,50 +2,50 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  padding: 15px;
+  gap: 20px;
+  padding: 20px;
 }
 
 .card {
-  width: calc(20% - 20px);
-  background-color: #fff;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
-  border-radius: 5px;
+  width: 300px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.2); 
   overflow: hidden;
-  height: 40px;
-  transition: transform 0.2s ease-in-out;
+  transition: transform 0.3s ease-in-out;
   cursor: pointer;
-  display: flex; /* Make Card a flex container */
-  flex-direction: column
+  font-family: 'Arial', sans-serif; 
+  color: #333; 
 }
 
 .card:hover {
   transform: scale(1.05);
+  box-shadow: 0px 6px 12px rgba(0, 0, 255, 0.3); 
 }
 
- .image {
+.image {
   width: 100%;
-  object-fit: contain;
-height: 50px ;
-  flex: 1;
-
- 
+  height: 200px;
+  object-fit: cover;
 }
 
 .content {
-  padding: 15px;
+  padding: 20px;
 }
 
 .type {
+  font-size: 1.5rem;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
 }
 
 .beds {
+  font-size: 1rem;
   margin-bottom: 10px;
 }
 
 .price {
+  font-size: 1rem;
   font-weight: bold;
   margin-bottom: 10px;
 }
@@ -53,24 +53,51 @@ height: 50px ;
 .features {
   list-style: none;
   padding: 0;
-  margin-bottom: 10px;
 }
 
 .feature {
-  font-size: 14px;
+  font-size: 0.9rem;
 }
 
-.bookButton {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 15px;
-  border: none;
-  border-radius: 3px;
-  cursor: pointer;
-  font-size: 16px;
-  transition: background-color 0.3s ease;
+.user-inputs {
+  margin-top: 20px;
+  border: 2px solid #ccc; 
+  border-radius: 5px;
+  padding: 10px;
 }
 
-.bookButton:hover {
-  background-color: #555;
+.label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.input:focus {
+  outline: none;
+  border-color: #007bff; 
+  box-shadow: 0 0 5px #007bff;
+}
+
+.book-now {
+  display: inline-block;
+  background-color: #007bff; 
+  color: #ffffff;
+  padding: 6px 12px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-top: 4px;
+  transition: background-color 0.3s;
+}
+
+.book-now:hover {
+  background-color: #0056b3; 
+  text-decoration: none;
+  transform: translateY(-2px); 
 }

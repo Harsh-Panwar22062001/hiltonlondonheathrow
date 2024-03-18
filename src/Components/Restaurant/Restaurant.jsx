@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import restaurantData from './Dishes.json';
 import './Restaurant.css'
 
+
 const Container = styled.div`
   display: flex;
   flex-wrap: wrap;

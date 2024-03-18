@@ -124,6 +124,8 @@ margin-top: 27rem;
 
 .sidebar-nav {
   padding: 20px;
+
+  margin-top: -3px;
 }
 
 .sidebar-nav ul {
@@ -144,14 +146,13 @@ margin-top: 27rem;
 }
 
 .sidebar-nav ul li:hover {
-  transform: translateY(-3px); /* Move list item up on hover */
+  transform: translateY(-3px); 
 }
 
 .sidebar-nav ul li a:hover {
-  color: #007bff; /* Change color on hover */
+  color: #007bff; 
 }
 
-/* Add hover effect on list items */
 .sidebar-nav ul li:hover {
   background-color: #f4f4f4;
   border-radius: 5px;
@@ -164,14 +165,14 @@ margin-top: 27rem;
 }
 
 
-/* GetStarted.css */
+
 .get-started-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-/* Add any additional styling as needed */
+
 
 
 @media only screen and (max-width: 600px) {
@@ -205,18 +206,18 @@ margin-top: -335px;
 
 
 .video-container video {
-  width: 100vw; /* Stretch video to full width of viewport */
+  width: 100vw; 
   height: 600px;
   opacity: 0.8;
 }
 
 .content {
-  top: 20%; /* Adjusted position for smaller screens */
-  max-width: 80%; /* Limit width for smaller screens */
+  top: 20%;
+  max-width: 80%; 
 }
 
 .content h1 {
-  font-size: 0.9rem; /* Adjusted font size for smaller screens */
+  font-size: 0.9rem; 
   margin-bottom: 0.5rem;
   white-space: nowrap;
   font-weight: bold;
@@ -229,7 +230,7 @@ margin-top: -335px;
 }
 
 .content p {
-  font-size: 1rem; /* Adjusted font size for smaller screens */
+  font-size: 1rem; 
   margin: 0.5rem 0;
   text-shadow: 
   -1px -1px 0 #000,  
@@ -238,11 +239,17 @@ margin-top: -335px;
   1px 1px 0 #000;
 }
 
+
+.sidebar-nav {
+
+
+  margin-top: -12px;
+}
 .get-started-button {
-  padding: 8px 16px; /* Adjusted padding for smaller screens */
+  padding: 8px 16px; 
   font-size: 1rem;
   margin-top: 50px;
-   /* Adjusted font size for smaller screens */
+   
 }
 
 

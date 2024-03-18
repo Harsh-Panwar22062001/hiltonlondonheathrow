@@ -7,8 +7,9 @@ const HeroPopUp = ({ isOpen, onClose }) => {
   return (
     <motion.div
       className={`popup ${isOpen ? "open" : ""}`}
-      initial={{ opacity: 0, scale: 0.5 }}
-      animate={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0.8 }}
+      animate={{ opacity: isOpen ? 1 : 0, scale: isOpen ? 1 : 0.8 }}
+      transition={{ duration: 0.3 }}
       exit={{ opacity: 0, scale: 0.5 }}
     >
       <div className="popup-content">
