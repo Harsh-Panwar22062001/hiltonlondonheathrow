@@ -3,7 +3,10 @@ import * as Components from "./Components";
 import "./LoginPage.css";
 import Validation from './LoginValidation.js'; // Import the validation function
 import { Link, useNavigate } from "react-router-dom";
+import { GoogleLogin } from 'react-google-login';
 import axios from 'axios';
+
+const clientId = "64853150142-qghlcri9mp8cbjn4j0gb1djis6belqh0.apps.googleusercontent.com";
 
 function LoginPage() {
   const [signIn, setSignIn] = useState({
@@ -12,8 +15,15 @@ function LoginPage() {
     password: "",
   });
 
-  const [error, setError] = useState({});
+  const onSuccess = (res) => {
+    console.log("Login Success ! Current User :", res.profileObj);
+  };
 
+  const onFailure = (res) => {
+    console.log("Login Failed ! res:", res);
+  };
+
+  const [error, setError] = useState({});
   const navigate = useNavigate(); // Use useNavigate hook
 
   const handleSubmit = (event) => {
@@ -23,7 +33,7 @@ function LoginPage() {
     if (error.email === "" && error.password === "") {
       axios.post('http://localhost:8086/login', signIn)
         .then(res => {
-          if(res.data.success){
+          if (res.data.success) {
             navigate('/', { replace: true });
             alert("Login successful!");
           } else {
@@ -67,6 +77,17 @@ function LoginPage() {
             </div>
 
             <Components.Button>Sign in</Components.Button>
+
+            <div className="google-login-container">
+              <GoogleLogin
+                clientId={clientId}
+                buttonText="Login with Google"
+                onSuccess={onSuccess}
+                onFailure={onFailure}
+                cookiePolicy={'single_host_origin'}
+                isSignedIn={true}
+              />
+            </div>
           </Components.Form>
         </Components.SignUpContainer>
 
