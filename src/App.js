@@ -8,16 +8,15 @@ import RestaurantMenu from './Components/Restaurant/Restaurant';
 import ExploreCards from './Components/Explore/ExploreActivity';
 import HeroBanner from './Components/Hero-Banner/HeroBanner';
 
-import RoomBooking from './Components/RoomBooking/RoomBooking';
-
 
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const [isSignUp, setIsSignUp] = useState(false);
-
+ 
   return (
     <Router>
-      <div className="App">
+     
+
         <Routes>
           <Route exact path="/" element={<GetStartedPage />} />
           <Route exact path="/login" element={<LoginPage isLoggedIn={isLoggedIn} setIsLoggedIn={setIsLoggedIn} />} />
@@ -26,13 +25,15 @@ function App() {
           <Route exact path="/book-dishes" element={<RestaurantMenu />} />
           <Route exact path="/bookactivity" element={<ExploreCards/>} />
           <Route exact path="/heroactivity" element={<HeroBanner/>} />
-          <Route exact path="/" component={<RoomBooking/>} />
-      
-         
+        
+          <Route exact path="/getto" element={<GetStartedPage />} />
+          <Route exact path="/getru" element={<GetStartedPage />} />
 
-         
+          <Route exact path="/sig" element={<SignUp/>} />
+          <Route exact path="/homeup" element={<GetStartedPage />} />
+          
         </Routes>
-      </div>
+ 
     </Router>
   );
 }

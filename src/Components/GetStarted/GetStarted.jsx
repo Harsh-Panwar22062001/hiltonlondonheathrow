@@ -80,7 +80,8 @@ function GetStarted() {
           >
             <nav className="sidebar-nav">
               <ul>
-                <li><Link to="/">Home</Link></li>
+                <li><Link to="/getto">Home</Link></li>
+                <li><Link to="/profile">Profile</Link></li>
                 <li><Link to="/terms">Terms and Conditions</Link></li>
                 <li><Link to="/contact">Contact Us</Link></li>
                 <li><Link to="/privacy">Privacy</Link></li>

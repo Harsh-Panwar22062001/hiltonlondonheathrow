@@ -19,3 +19,18 @@
 
     background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
   }
+
+  .redis {
+
+
+    max-width: 1100px;
+    width: 600px;
+    background-color: yellow;
+    border: 56px solid red ;
+  }
+
+  .greyo{
+
+    width:'20px';
+    background-color: yellow;
+  }

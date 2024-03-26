@@ -7,12 +7,13 @@ import './Restaurant.css'
 
 const Container = styled.div`
   display: flex;
+  position:sticky;
   flex-wrap: wrap;
   justify-content: center;
   gap: 20px;
   height:80px;
-  padding: 20px; /* Add padding to the container */
-  margin-top: 20px; /* Add margin to separate from the top of the screen */
+  padding: 20px; 
+  margin-top: 20px; 
   box-sizing: border-box;
 `;
 

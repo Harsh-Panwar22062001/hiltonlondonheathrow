@@ -9,7 +9,6 @@
     .socion{
 display: flex;
 flex-direction: row;
-top: -50;
 margin-top: 7rem;
 gap: 10;
     }

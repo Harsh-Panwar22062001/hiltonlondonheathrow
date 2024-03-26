@@ -18,7 +18,7 @@ const Card = styled(motion.div)`
  
  
   background-color: #fff;
-  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0px 4px 8px rgba(0, 0, 255, 0.2);
   border-radius: 10px;
   overflow: hidden;
   transition: transform 0.2s ease-in-out;
