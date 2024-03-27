@@ -1,5 +1,5 @@
 {
-  "homepage": "https://Harsh-Panwar22062001.github.io/hiltonlondonheathrow",
+ 
   "name": "hilton-heathrow",
   "version": "0.1.0",
   "private": true,
@@ -29,7 +29,7 @@
     "react-hook-form": "^7.51.1",
     "react-icons": "^5.0.1",
     "react-router-dom": "^6.22.3",
-    "react-scripts": "5.0.1",
+    "react-scripts": "^5.0.1",
     "react-sidebar": "^3.0.2",
     "react-transition-group": "^4.4.5",
     "styled-components": "^6.1.8",

@@ -1,5 +1,3 @@
-// SignUp.js
-
 import React, { useState } from 'react';
 import {
   MDBBtn,
@@ -55,8 +53,8 @@ function SignUp() {
   return (
     <MDBContainer fluid className='d-flex align-items-center justify-content-center bg-image' style={{ backgroundImage: 'url(https://mdbcdn.b-cdn.net/img/Photos/new-templates/search-box/img4.webp)' }}>
       <div className='mask gradient-custom-3'></div>
-      <MDBCard className='m-5 greyo redis' >
-        <MDBCardBody className='px-5' >
+      <MDBCard className='m-5 redis'>
+        <MDBCardBody className='px-5'>
           <h2 className="text-uppercase text-center mb-5">Create an account</h2>
           <MDBInput
             wrapperClass='mb-4'

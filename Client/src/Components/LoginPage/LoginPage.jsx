@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import * as Components from "./Components";
 import "./LoginPage.css";
-import Validation from './LoginValidation.js'; // Import the validation function
+import Validation from './LoginValidation.js';
 import { Link, useNavigate } from "react-router-dom";
 import { GoogleLogin } from 'react-google-login';
 import axios from 'axios';
@@ -24,12 +24,11 @@ function LoginPage() {
   };
 
   const [error, setError] = useState({});
-  const navigate = useNavigate(); // Use useNavigate hook
+  const navigate = useNavigate();
 
   const handleSubmit = (event) => {
     event.preventDefault();
     setError(Validation(signIn));
-    // Redirect to home page on successful login
     if (error.email === "" && error.password === "") {
       axios.post('http://localhost:8086/login', signIn)
         .then(res => {
@@ -99,33 +98,36 @@ function LoginPage() {
             <Components.Anchor href="#">
               Forgot your password?
             </Components.Anchor>
-            <Components.Button as={Link} to="/getru">Sign In</Components.Button> {/* Use Link to navigate */}
+            <Components.Button as={Link} to="/getru">Sign In</Components.Button>
           </Components.Form>
         </Components.SignInContainer>
 
         <Components.OverlayContainer signIn={signIn}>
           <Components.Overlay signIn={signIn}>
-            <Components.LeftOverlayPanel signIn={signIn}>
-              <Components.Title>Welcome Back!</Components.Title>
-              <Components.Paragraph>
-                To keep connected with us please login with your personal info
-              </Components.Paragraph>
-              <Components.GhostButton onClick={() => setSignIn(true)}>
-                <div>
-                  <Link to="/sig">Register</Link>
-                </div>
-              </Components.GhostButton>
-            </Components.LeftOverlayPanel>
 
-            <Components.RightOverlayPanel signIn={signIn}>
-              <Components.Title>Hello, Friend!</Components.Title>
-              <Components.Paragraph>
-                Enter Your personal details and start journey with us
-              </Components.Paragraph>
-              <Components.GhostButton onClick={() => setSignIn(false)}>
-                Sign In
-              </Components.GhostButton>
-            </Components.RightOverlayPanel>
+            <div className="leftone">
+              <Components.LeftOverlayPanel  signIn={signIn}>
+                <Components.Title>Welcome Back!</Components.Title>
+                <Components.Paragraph>
+                  To keep connected with us please login with your personal info
+                </Components.Paragraph>
+                <Components.GhostButton onClick={() => setSignIn(true)}>
+                  <div>
+                    <Link to="/sig">Register</Link>
+                  </div>
+                </Components.GhostButton>
+              </Components.LeftOverlayPanel>
+
+              <Components.RightOverlayPanel signIn={signIn}>
+                <Components.Title>Hello, Friend!</Components.Title>
+                <Components.Paragraph>
+                  Enter Your personal details and start journey with us
+                </Components.Paragraph>
+                <Components.GhostButton onClick={() => setSignIn(false)}>
+                  Sign In
+                </Components.GhostButton>
+              </Components.RightOverlayPanel>
+            </div>
           </Components.Overlay>
         </Components.OverlayContainer>
       </Components.Container>

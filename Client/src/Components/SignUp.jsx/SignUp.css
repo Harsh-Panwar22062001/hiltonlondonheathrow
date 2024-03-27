@@ -1,0 +1,35 @@
+/* Existing styles */
+
+.gradient-custom-3 {
+  background: #84fab0;
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5));
+  background: linear-gradient(to right, rgba(132, 250, 176, 0.5), rgba(143, 211, 244, 0.5))
+}
+
+.gradient-custom-4 {
+  background: #84fab0;
+  background: -webkit-linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1));
+  background: linear-gradient(to right, rgba(132, 250, 176, 1), rgba(143, 211, 244, 1))
+}
+
+.redis {
+  max-width: 600px;
+  width: 90%; /* Adjust width for smaller screens */
+  margin: auto; /* Center the card */
+  background-color: #fff; /* Set background color */
+  border-radius: 15px; /* Add border-radius for card */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Add box shadow for depth */
+  padding: 20px; /* Add padding */
+}
+
+.greyo {
+  /* Remove unnecessary width */
+}
+
+/* Additional styles for smaller screens */
+@media screen and (max-width: 576px) {
+  .redis {
+    width: 100%; /* Adjust width to fill the screen */
+    border-radius: 0; /* Remove border-radius */
+  }
+}
